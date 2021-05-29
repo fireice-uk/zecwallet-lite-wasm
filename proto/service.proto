@@ -74,7 +74,7 @@ service CompactTxStreamer {
     rpc SendTransaction(RawTransaction) returns (SendResponse) {}
 
     // t-Address support
-    rpc GetAddressTxids(TransparentAddressBlockFilter) returns (stream RawTransaction) {}
+    rpc GetTaddressTxids(TransparentAddressBlockFilter) returns (stream RawTransaction) {}
 
     // Misc
     rpc GetLightdInfo(Empty) returns (LightdInfo) {}

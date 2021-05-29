@@ -474,8 +474,8 @@ proto.cash.z.wallet.sdk.rpc.CompactTxStreamerPromiseClient.prototype.sendTransac
  *   !proto.cash.z.wallet.sdk.rpc.TransparentAddressBlockFilter,
  *   !proto.cash.z.wallet.sdk.rpc.RawTransaction>}
  */
-const methodDescriptor_CompactTxStreamer_GetAddressTxids = new grpc.web.MethodDescriptor(
-  '/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetAddressTxids',
+const methodDescriptor_CompactTxStreamer_GetTaddressTxids = new grpc.web.MethodDescriptor(
+  '/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetTaddressTxids',
   grpc.web.MethodType.SERVER_STREAMING,
   proto.cash.z.wallet.sdk.rpc.TransparentAddressBlockFilter,
   proto.cash.z.wallet.sdk.rpc.RawTransaction,
@@ -496,7 +496,7 @@ const methodDescriptor_CompactTxStreamer_GetAddressTxids = new grpc.web.MethodDe
  *   !proto.cash.z.wallet.sdk.rpc.TransparentAddressBlockFilter,
  *   !proto.cash.z.wallet.sdk.rpc.RawTransaction>}
  */
-const methodInfo_CompactTxStreamer_GetAddressTxids = new grpc.web.AbstractClientBase.MethodInfo(
+const methodInfo_CompactTxStreamer_GetTaddressTxids = new grpc.web.AbstractClientBase.MethodInfo(
   proto.cash.z.wallet.sdk.rpc.RawTransaction,
   /**
    * @param {!proto.cash.z.wallet.sdk.rpc.TransparentAddressBlockFilter} request
@@ -516,13 +516,13 @@ const methodInfo_CompactTxStreamer_GetAddressTxids = new grpc.web.AbstractClient
  * @return {!grpc.web.ClientReadableStream<!proto.cash.z.wallet.sdk.rpc.RawTransaction>}
  *     The XHR Node Readable Stream
  */
-proto.cash.z.wallet.sdk.rpc.CompactTxStreamerClient.prototype.getAddressTxids =
+proto.cash.z.wallet.sdk.rpc.CompactTxStreamerClient.prototype.GetTaddressTxids =
     function(request, metadata) {
   return this.client_.serverStreaming(this.hostname_ +
-      '/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetAddressTxids',
+      '/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetTaddressTxids',
       request,
       metadata || {},
-      methodDescriptor_CompactTxStreamer_GetAddressTxids);
+      methodDescriptor_CompactTxStreamer_GetTaddressTxids);
 };
 
 
@@ -533,13 +533,13 @@ proto.cash.z.wallet.sdk.rpc.CompactTxStreamerClient.prototype.getAddressTxids =
  * @return {!grpc.web.ClientReadableStream<!proto.cash.z.wallet.sdk.rpc.RawTransaction>}
  *     The XHR Node Readable Stream
  */
-proto.cash.z.wallet.sdk.rpc.CompactTxStreamerPromiseClient.prototype.getAddressTxids =
+proto.cash.z.wallet.sdk.rpc.CompactTxStreamerPromiseClient.prototype.GetTaddressTxids =
     function(request, metadata) {
   return this.client_.serverStreaming(this.hostname_ +
-      '/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetAddressTxids',
+      '/cash.z.wallet.sdk.rpc.CompactTxStreamer/GetTaddressTxids',
       request,
       metadata || {},
-      methodDescriptor_CompactTxStreamer_GetAddressTxids);
+      methodDescriptor_CompactTxStreamer_GetTaddressTxids);
 };
 
 

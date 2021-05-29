@@ -57,7 +57,7 @@ export function getTransparentTxids(address, startHeight, endHeight) {
 
       const retValue = [];
 
-      const resp = client.getAddressTxids(request);
+      const resp = client.GetTaddressTxids(request);
       resp.on('data', (resp) => {
         const hexBin = hex.encode(resp.serializeBinary());
         retValue.push(hexBin);
