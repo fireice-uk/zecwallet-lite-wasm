@@ -1,7 +1,7 @@
 import {Empty, LightdInfo, ChainSpec, RawTransaction, TransparentAddressBlockFilter, TxFilter, BlockRange, BlockID, CompactTxStreamerPromiseClient} from '../../../../grpc/service_grpc_web_pb';
 import hex from 'hex-string';
 
-const ENVOY_PROXY="https://lightwalletd.zecwallet.co:443";
+const ENVOY_PROXY="http://23.92.18.222:8080";
 
 export async function getInfo() {
   try {
