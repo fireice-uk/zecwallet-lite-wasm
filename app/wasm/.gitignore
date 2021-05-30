@@ -1,1 +1,5 @@
 /target
+
+# protobuf generated
+src/proto/service.rs
+src/proto/compact_formats.rs
